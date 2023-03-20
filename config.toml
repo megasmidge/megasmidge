@@ -1,0 +1,115 @@
+baseURL = 'https://megasmidge.com'
+languageCode = 'en-us'
+title = 'MegaSmidge'
+theme = "hello-4s3ti"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+# googleAnalytics = ""
+# disqusShortname = ""
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+IsMultiLangual = false
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+  backgroundImage = "https://4s3ti.net/4s3tibg.gif"
+  # Subtitle for home
+  homeSubtitle = "Splunk/SOAR Admin getting better at Python, bash, and linux"
+  defaultTheme = "dark"
+  enableThemeToggle = true
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+  enableGlobalLanguageMenu = true
+
+  # Metadata mostly used in document's head
+  description = "My new homepage or blog"
+  keywords = "homepage, blog"
+  images = [""]
+  showPosts= true 
+  ReadmoreText = true
+  ShowReadingTime = true
+
+  [params.footer]
+    trademark = true
+   # rss = true
+    copyright = true
+    author = true
+
+    # Shows social icons on footer instead of main page
+    socialIcons = true
+
+    topText = []
+    bottomText = [
+      #"Powered by <a href=\"http://gohugo.io\">Hugo</a>",
+      "As an Amazon Associate I earn from qualifying purchases."
+    ]
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[languages]
+  [languages.en]
+    title = "MegaSmidge"
+    subtitle = ""
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener"></a>CC BY-NC 4.0'
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "megasmidge.com"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+  # And you can even create generic menu
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "posts/"
+#  [[menu.main]]
+#    identifier = "Contact"
+#    name       = "Contact"
+#    url        = "#"
+#  [[menu.main]]
+#    identifier = "sometool"
+#    name       = "SomeTool"
+#    url        = "#"
+#    parent     = "tools"
+
